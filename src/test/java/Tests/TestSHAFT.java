@@ -1,6 +1,7 @@
-import com.shaft.driver.SHAFT;
-import org.testng.annotations.Test;
+package Tests;
 
+import org.testng.annotations.Test;
+import Pages.*;
 public class TestSHAFT extends TestConfigurations {
     
     @Test
