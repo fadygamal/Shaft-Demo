@@ -18,8 +18,6 @@ public class MainMenuPage {
         driver.element().click(getSignupButton);return this;
     }
     public MainMenuPage assertThatLoggedInAsUsername(String expected){
-        JavaScriptWaitManager.waitForLazyLoading();
-        driver.element().waitToBeReady(getLoggedinName);
         driver.element().assertThat(getLoggedinName).text().contains(expected).perform();return this;
     }
     public MainMenuPage deleteAccount(){
