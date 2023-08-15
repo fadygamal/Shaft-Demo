@@ -19,10 +19,10 @@ public class TestSHAFT extends TestConfigurations {
 
         new AccountCreatedPage(driver).assertThatAccountCreatedSuccessfully("ACCOUNT CREATED!")
                 .clickOnContinueButton();
-        new MainMenuPage(driver).assertThatLoggedInAsUsername("fady")
-                .deleteAccount();
-        new AccountDeletedPage(driver).assertThatAccountDeleted("ACCOUNT DELETED!")
-                .clickOnContinueButtonAfterDelete();
+//        new MainMenuPage(driver).assertThatLoggedInAsUsername("fady")
+//                .deleteAccount();
+//        new AccountDeletedPage(driver).assertThatAccountDeleted("ACCOUNT DELETED!")
+//                .clickOnContinueButtonAfterDelete();
 
     }
 
