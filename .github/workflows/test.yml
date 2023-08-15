@@ -10,7 +10,7 @@ on:
 
 env:
 
-  TESTING_SCOPE:""
+  TESTING_SCOPE: "test.java.TestSHAFT"
 
 
 
