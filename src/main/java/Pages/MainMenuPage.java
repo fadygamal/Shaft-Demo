@@ -1,6 +1,7 @@
 package Pages;
 
 import com.shaft.driver.SHAFT;
+import com.shaft.gui.browser.internal.JavaScriptWaitManager;
 import org.openqa.selenium.By;
 
 public class MainMenuPage {
@@ -17,6 +18,7 @@ public class MainMenuPage {
         driver.element().click(getSignupButton);return this;
     }
     public MainMenuPage assertThatLoggedInAsUsername(String expected){
+        JavaScriptWaitManager.waitForLazyLoading();
         driver.element().assertThat(getLoggedinName).text().contains(expected).perform();return this;
     }
     public MainMenuPage deleteAccount(){
