@@ -2,8 +2,7 @@ import com.shaft.driver.SHAFT;
 import org.testng.annotations.Test;
 
 public class TestSHAFT extends TestConfigurations {
-
-//test fady
+    
     @Test
     public void TestCase1RegisterUser() {
         new HomePage(driver).assertThatHomePageIsVisibleSuccessfully("Automation Exercise");
