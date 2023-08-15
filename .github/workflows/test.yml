@@ -75,5 +75,15 @@ jobs:
         if: success() || failure() # always run even if the previous step fails
         with:
           report_paths: 'target/surefire-reports/TEST-*.xml'
+      - name: Upload Allure Report as Pipeline Artifact
 
+        if: always()
+
+        uses: actions/upload-artifact@v3
+
+        with:
+
+         name: Windows_Edge_Local_Allure
+
+         path: "extent-reports/ExtentReports_*.html"
 
