@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 
 public class TestSHAFT extends TestConfigurations {
 
-//test
+//test fady
     @Test
     public void TestCase1RegisterUser() {
         new HomePage(driver).assertThatHomePageIsVisibleSuccessfully("Automation Exercise");
