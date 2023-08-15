@@ -11,7 +11,7 @@ public class TestSHAFT extends TestConfigurations {
 
         new LoginPage(driver)
                 .assertThatSignupPageIsVisibleSuccessfully("New User Signup!")
-                .signup(data.getTestData("Name"), data.getTestData("Mail"));
+                .signup(data.getTestData("Name"), "fadygamal"+System.currentTimeMillis()+"@gmail.com");
         new SignupPage(driver)
                 .assertThatAccountInformationPageIsVisibleSuccessfully("ENTER ACCOUNT INFORMATION")
                 .enterAccountInformation("Mr", "fadygamal", "123456", "3", "3", "2000")
